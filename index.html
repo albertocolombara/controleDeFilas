@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Controle de Filas - Mapa - Alberto Colombara</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="painel">
+            <h3>Senha atual:</h3>
+            <h1 id="senhaAtual">0-0</h1>
+            <h3 id="caixaAtual">Caixa -</h3>
+        </div>
+
+        <div class="comandos">
+            <div class="comandos_cliente">
+                <h2>Para clientes</h2>
+                <p>Selecione uma opção:</p>
+                <div class="comandos_cliente_btn">
+                    <button id="comum" onclick="SenhaComum()">Comum</button>
+                    <button id="prioridade" onclick="SenhaPrioridade()">Prioridade</button>
+                    <button id="rapido" onclick="SenhaRapido()">Rápido</button>
+                </div>
+                <h3>Sua senha é: <span id="suaSenha">0-0</span></h3>
+            </div>
+            <div class="comandos_caixa">
+                <h2>Para caixas</h2>
+                <p>Selecione uma opção:</p>
+                <div class="comandos_caixa_btn">
+                    <button id="caixa1" onclick="Caixa1()">Caixa-1</button>
+                    <button id="caixa2" onclick="Caixa2()">Caixa-2</button>
+                    <button id="caixa3" onclick="Caixa3()">Caixa-3</button>
+                    <button id="caixa4" onclick="Caixa4()">Caixa-4</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h4>Aluno: Alberto Colombara</h4>
+        </div>
+
+        <script src="app/script.js" type="text/javascript"></script>
+    </body>
+</html>

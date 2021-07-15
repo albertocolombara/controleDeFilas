@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #38369A;
+    color: #38369A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.painel h1 {
+    font-size: 80px;
+    color: #A9DBB8;
+}
+
+.painel h3 {
+    font-size: 30px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #A9DBB8;
+}
+
+.footer h4 {
+    color: #A9DBB8;
+}
+
+.comandos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comandos_cliente, .comandos_caixa {
+    background-color: #E1E1F4;
+    padding: 50px;
+    margin: 0 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.comandos_cliente h3 {
+    margin-top: 10px;
+}
+
+.comandos p {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #38369A;
+    border: 0;
+    cursor: pointer;
+    color: #A9DBB8;
+    margin: 10px 8px;
+    box-shadow: 1px 1px 10px rgba(43, 28, 184, 0.3);
+    border-radius: 20px;
+    font-family: "Lato", sans-serif;
+    transition: all .6s;
+}
+
+button:hover {
+    background-color: #22223b;
+    color: #E1E1F4;
+}
+
+@media (max-width: 768px) {
+
+    .painel h1 {
+        font-size: 60px;
+    }
+    
+    .painel h3 {
+        font-size: 20px;
+    }
+
+    .comandos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .comandos_cliente, .comandos_caixa {
+        flex: 1 20%;
+        background-color: #E1E1F4;
+        padding: 20px;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
